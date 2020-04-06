@@ -53,7 +53,7 @@ deploy-to-cluster:
   - script:
       name: "Visualise Kubernetes config"
       code: cat kubernetes.yml
-
+      
   - kubectl:
       name: deploy to kubernetes
       server: $KUBERNETES_MASTER
